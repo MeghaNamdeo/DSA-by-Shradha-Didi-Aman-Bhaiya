@@ -13,4 +13,33 @@ class Solution {
 // sc:O(n)
 
 ----------------------------------------------------------------------
+
+  //using predefined function
+class Solution {
+  public:
+    void reverseArray(vector<int> &arr) {
+        reverse(arr.begin(),arr.end());
+    }
+};
+// tc:O(n)
+// sc:O(1)
+
+----------------------------------------------------------------------
+  //using swap
+class Solution {
+  public:
+    void reverseArray(vector<int> &arr) {
+        int start =0;
+        int end = arr.size()-1;
+        while(start<=end)
+        {
+            swap(arr[start],arr[end]);
+            start++;
+            end--;
+        }
+    
+    }
+};
+// tc:O(n)
+// sc:O(1)
   
